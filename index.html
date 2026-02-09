@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edu-Chain: Blockchain-Based Scholarship Transparency System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- ============================================
+         HEADER
+         ============================================ -->
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <div class="logo-icon">⛓️</div>
+                <div class="logo-text">
+                    <h1>Edu-Chain</h1>
+                    <p>Blockchain-Based Scholarship Transparency System</p>
+                </div>
+            </div>
+            <div class="access-badge">
+                Access Level: Public — No Blockchain Credentials Required
+            </div>
+        </div>
+    </header>
+
+    <!-- ============================================
+         MAIN CONTENT
+         ============================================ -->
+    <div class="container">
+        <!-- LANDING / OVERVIEW SECTION -->
+        <div class="landing">
+            <h1>Edu-Chain</h1>
+            <p class="tagline">Transparent • Immutable • Accountable</p>
+            <p class="description">
+                A revolutionary blockchain-based scholarship management system that ensures complete transparency 
+                in selection processes, prevents fraud through immutable records, and maintains accountability 
+                through credential-based role management. Every decision and transaction is permanently recorded 
+                and auditable on the blockchain.
+            </p>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🔍</div>
+                    <h3>Transparent Selection</h3>
+                    <p>Every selection decision is recorded with clear reasoning, visible to all stakeholders.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔒</div>
+                    <h3>Immutable Records</h3>
+                    <p>All data is stored on the blockchain, ensuring records cannot be altered or deleted.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🛡️</div>
+                    <h3>Fraud Prevention</h3>
+                    <p>Blockchain technology prevents duplicate beneficiaries and ensures fund integrity.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎓</div>
+                    <h3>Credential-Based Access</h3>
+                    <p>Role-based permissions assigned via blockchain credentials ensure proper access control.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- ROLE SELECTION & CREDENTIAL EXPLANATION -->
+        <section id="roles">
+            <h2>Role-Based Access Control</h2>
+            <p>
+                Edu-Chain uses blockchain credentials to assign roles and permissions. Each role has specific 
+                access levels determined by smart contract verification. Your role determines what information 
+                you can view and what actions you can perform.
+            </p>
+            <div class="role-grid">
+                <div class="role-card public">
+                    <div class="role-header">
+                        <div class="role-icon">👁️</div>
+                        <div>
+                            <h3>Public Viewer</h3>
+                            <span class="credential-badge">No Credentials Required</span>
+                        </div>
+                    </div>
+                    <div class="role-description">
+                        <p>Open access for transparency. No blockchain credentials needed.</p>
+                    </div>
+                    <div class="role-permissions">
+                        <strong>Can View:</strong>
+                        <ul>
+                            <li>Selected scholars list</li>
+                            <li>Selection criteria</li>
+                            <li>Fund distribution summary</li>
+                            <li>Public transparency reports</li>
+                        </ul>
+                    </div>
+                    <div class="blockchain-notice">
+                        <strong>Access Level:</strong> Public — No Blockchain Credentials Required
+                    </div>
+                </div>
+
+                <div class="role-card committee">
+                    <div class="role-header">
+                        <div class="role-icon">👥</div>
+                        <div>
+                            <h3>Scholarship Committee</h3>
+                            <span class="credential-badge">Blockchain Credential Verified</span>
+                        </div>
+                    </div>
+                    <div class="role-description">
+                        <p>Role assigned via blockchain identity verification. Credential stored on-chain.</p>
+                    </div>
+                    <div class="role-permissions">
+                        <strong>Can View:</strong>
+                        <ul>
+                            <li>Full applicant list</li>
+                            <li>Detailed eligibility criteria</li>
+                            <li>Reason-for-selection records</li>
+                            <li>Application review history</li>
+                        </ul>
+                        <strong style="display: block; margin-top: 1rem; color: #dc2626;">Cannot:</strong>
+                        <ul>
+                            <li>Release funds</li>
+                            <li>Modify records</li>
+                        </ul>
+                    </div>
+                    <div class="blockchain-notice">
+                        <strong>Access Level:</strong> Committee — Blockchain Credential Verified
+                    </div>
+                </div>
+
+                <div class="role-card admin">
+                    <div class="role-header">
+                        <div class="role-icon">⚙️</div>
+                        <div>
+                            <h3>Administrator / Fund Manager</h3>
+                            <span class="credential-badge">Smart Contract Assigned</span>
+                        </div>
+                    </div>
+                    <div class="role-description">
+                        <p>Highest authority role. Assigned via smart contract with full system access.</p>
+                    </div>
+                    <div class="role-permissions">
+                        <strong>Can View:</strong>
+                        <ul>
+                            <li>Fund distribution logs</li>
+                            <li>Beneficiary verification records</li>
+                            <li>Complete audit trails</li>
+                            <li>All administrative actions</li>
+                        </ul>
+                        <strong style="display: block; margin-top: 1rem; color: #dc2626;">Can Execute:</strong>
+                        <ul>
+                            <li>Fund release transactions</li>
+                            <li>Beneficiary verification</li>
+                            <li>System configuration</li>
+                        </ul>
+                    </div>
+                    <div class="admin-warning">
+                        <strong>⚠️ Warning:</strong> All administrative actions are permanently recorded on the blockchain and cannot be reversed.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SCHOLARSHIP SELECTION TRANSPARENCY -->
+        <section id="selection">
+            <h2>Scholarship Selection Transparency</h2>
+            <p>
+                All scholarship selection decisions are transparent and immutable. Each applicant's status, 
+                eligibility criteria, and selection reasoning are permanently recorded on the blockchain. 
+                This ensures accountability and allows stakeholders to understand why decisions were made.
+            </p>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Applicant ID</th>
+                            <th>Name</th>
+                            <th>Academic Score</th>
+                            <th>Financial Status</th>
+                            <th>Eligibility Result</th>
+                            <th>Selection Status</th>
+                            <th>Reason for Selection</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>APP-2024-001</strong></td>
+                            <td>Sarah Johnson</td>
+                            <td>95.5</td>
+                            <td>Low Income</td>
+                            <td>✅ Eligible</td>
+                            <td><span class="status-badge status-selected">Selected</span></td>
+                            <td>
+                                <div class="reason-box">
+                                    <strong>Selection Reason:</strong> Exceptional academic performance (95.5%) combined with verified financial need. 
+                                    Meets all eligibility criteria. Blockchain Verified: ✓
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>APP-2024-002</strong></td>
+                            <td>Michael Chen</td>
+                            <td>92.3</td>
+                            <td>Low Income</td>
+                            <td>✅ Eligible</td>
+                            <td><span class="status-badge status-selected">Selected</span></td>
+                            <td>
+                                <div class="reason-box">
+                                    <strong>Selection Reason:</strong> Strong academic record (92.3%) with documented financial hardship. 
+                                    Community service involvement noted. Blockchain Verified: ✓
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>APP-2024-003</strong></td>
+                            <td>Emily Rodriguez</td>
+                            <td>88.7</td>
+                            <td>Medium Income</td>
+                            <td>✅ Eligible</td>
+                            <td><span class="status-badge status-rejected">Rejected</span></td>
+                            <td>
+                                <div class="reason-box" style="background: #fee2e2; border-color: #dc2626; color: #991b1b;">
+                                    <strong>Rejection Reason:</strong> Academic score below threshold (88.7 < 90.0 required). 
+                                    Financial status does not meet priority criteria. Blockchain Verified: ✓
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>APP-2024-004</strong></td>
+                            <td>David Kim</td>
+                            <td>94.1</td>
+                            <td>Low Income</td>
+                            <td>✅ Eligible</td>
+                            <td><span class="status-badge status-selected">Selected</span></td>
+                            <td>
+                                <div class="reason-box">
+                                    <strong>Selection Reason:</strong> High academic achievement (94.1%) with verified low-income status. 
+                                    First-generation college student. Blockchain Verified: ✓
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>APP-2024-005</strong></td>
+                            <td>Jessica Martinez</td>
+                            <td>91.2</td>
+                            <td>Low Income</td>
+                            <td>✅ Eligible</td>
+                            <td><span class="status-badge status-pending">Pending Review</span></td>
+                            <td>
+                                <div style="color: #64748b; font-style: italic;">Under committee review. Decision pending.</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>APP-2024-006</strong></td>
+                            <td>James Wilson</td>
+                            <td>89.5</td>
+                            <td>Low Income</td>
+                            <td>✅ Eligible</td>
+                            <td><span class="status-badge status-rejected">Rejected</span></td>
+                            <td>
+                                <div class="reason-box" style="background: #fee2e2; border-color: #dc2626; color: #991b1b;">
+                                    <strong>Rejection Reason:</strong> Academic score below minimum threshold (89.5 < 90.0). 
+                                    Application incomplete. Blockchain Verified: ✓
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>APP-2024-007</strong></td>
+                            <td>Amanda Taylor</td>
+                            <td>96.8</td>
+                            <td>Low Income</td>
+                            <td>✅ Eligible</td>
+                            <td><span class="status-badge status-selected">Selected</span></td>
+                            <td>
+                                <div class="reason-box">
+                                    <strong>Selection Reason:</strong> Outstanding academic performance (96.8%) with verified financial need. 
+                                    Leadership activities documented. Blockchain Verified: ✓
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="immutable-notice">
+                <strong>Blockchain Verification:</strong> This record is immutable and stored on the blockchain. 
+                All selection decisions are permanently recorded and cannot be altered or deleted.
+            </div>
+        </section>
+
+        <!-- FUND DISTRIBUTION TRACKING -->
+        <section id="funds">
+            <h2>Fund Distribution Tracking</h2>
+            <p>
+                Track scholarship fund distribution from application to release. Each transaction is executed 
+                via smart contracts and recorded on the blockchain, ensuring transparency and preventing misuse.
+            </p>
+            
+            <div class="timeline">
+                <div class="timeline-step completed">
+                    <div class="timeline-circle">1</div>
+                    <div class="timeline-label">Applied</div>
+                    <div class="timeline-desc">Application submitted</div>
+                </div>
+                <div class="timeline-step completed">
+                    <div class="timeline-circle">2</div>
+                    <div class="timeline-label">Verified</div>
+                    <div class="timeline-desc">Eligibility confirmed</div>
+                </div>
+                <div class="timeline-step completed">
+                    <div class="timeline-circle">3</div>
+                    <div class="timeline-label">Approved</div>
+                    <div class="timeline-desc">Selection approved</div>
+                </div>
+                <div class="timeline-step completed">
+                    <div class="timeline-circle">4</div>
+                    <div class="timeline-label">Released</div>
+                    <div class="timeline-desc">Funds distributed</div>
+                </div>
+            </div>
+
+            <div class="transaction-grid">
+                <div class="transaction-card">
+                    <div class="transaction-hash">
+                        Hash: 0x7a3f9b2c1d4e8a5f6b7c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1
+                    </div>
+                    <div class="transaction-details">
+                        <div class="transaction-row">
+                            <span class="transaction-label">Beneficiary ID:</span>
+                            <span class="transaction-value">APP-2024-001</span>
+                        </div>
+                        <div class="transaction-row">
+                            <span class="transaction-label">Recipient:</span>
+                            <span class="transaction-value">Sarah Johnson</span>
+                        </div>
+                        <div class="transaction-row">
+                            <span class="transaction-label">Amount:</span>
+                            <span class="transaction-value amount">$5,000.00</span>
+                        </div>
+                        <div class="transaction-row">
+                            <span class="transaction-label">Timestamp:</span>
+                            <span class="transaction-value">2024-03-15 14:32:18 UTC</span>
+                        </div>
+                        <div class="transaction-row">
+                            <span class="transaction-label">Status:</span>
+                            <span class="status-badge status-selected">Confirmed</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="transaction-card">
+                    <div class="transaction-hash">
+                        Hash: 0x8b4g0c3e2f5h9i6j8k0l1m2n3o4p5q6r7s8t9u0v1w2x3y4z5a6b7c8d9e0f1
+                    </div>
+                    <div class="transaction-details">
+                        <div class="transaction-row">
+                            <span class="transaction-label">Beneficiary ID:</span>
+                            <span class="transaction-value">APP-2024-002</span>
+                        </div>
+                        <div class="transaction-row">
+                            <span class="transaction-label">Recipient:</span>
+                            <span class="transaction-value">Michael Chen</span>
+                        </div>
+                        <div class="transaction-row">
+                            <span class="transaction-label">Amount:</span>
+                            <span class="transaction-value amount">$5,000.00</span>
+                        </div>
+                        <div class="transaction-row">
+                            <span class="transaction-label">Timestamp:</span>
+                            <span class="transaction-value">2024-03-16 09:15:42 UTC</span>
+                        </div>
+                        <div class="transaction-row">
+                            <span class="transaction-label">Status:</span>
+                            <span class="status-badge status-selected">Confirmed</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="transaction-card">
+                    <div class="transaction-hash">
+                        Hash: 0x9c5h1d4f3g6i0j7k9l2m3n4o5p6q7r8s9t0u1v2w3x4y5z6a7b8c9d0e1f2
+                    </div>
+                    <div class="transaction-details">
+                        <div class="transaction-row">
+                            <span class="transaction-label">Beneficiary ID:</span>
+                            <span class="transaction-value">APP-2024-004</span>
+                        </div>
+                        <div class="transaction-row">
+                            <span class="transaction-label">Recipient:</span>
+                            <span class="transaction-value">David Kim</span>
+                        </div>
+                        <div class="transaction-row">
+                            <span class="transaction-label">Amount:</span>
+                            <span class="transaction-value amount">$5,000.00</span>
+                        </div>
+                        <div class="transaction-row">
+                            <span class="transaction-label">Timestamp:</span>
+                            <span class="transaction-value">2024-03-17 11:28:55 UTC</span>
+                        </div>
+                        <div class="transaction-row">
+                            <span class="transaction-label">Status:</span>
+                            <span class="status-badge status-selected">Confirmed</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="transaction-card">
+                    <div class="transaction-hash">
+                        Hash: 0xad6i2e5g4h7j1k8l0m3n4o5p6q7r8s9t0u1v2w3x4y5z6a7b8c9d0e1f2g3
+                    </div>
+                    <div class="transaction-details">
+                        <div class="transaction-row">
+                            <span class="transaction-label">Beneficiary ID:</span>
+                            <span class="transaction-value">APP-2024-007</span>
+                        </div>
+                        <div class="transaction-row">
+                            <span class="transaction-label">Recipient:</span>
+                            <span class="transaction-value">Amanda Taylor</span>
+                        </div>
+                        <div class="transaction-row">
+                            <span class="transaction-label">Amount:</span>
+                            <span class="transaction-value amount">$5,000.00</span>
+                        </div>
+                        <div class="transaction-row">
+                            <span class="transaction-label">Timestamp:</span>
+                            <span class="transaction-value">2024-03-18 16:45:12 UTC</span>
+                        </div>
+                        <div class="transaction-row">
+                            <span class="transaction-label">Status:</span>
+                            <span class="status-badge status-selected">Confirmed</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="smart-contract-notice">
+                <strong>Smart Contract Execution:</strong> Fund releases are executed via smart contracts. 
+                Each transaction is automatically verified and recorded on the blockchain, ensuring immutability and transparency.
+            </div>
+        </section>
+
+        <!-- BENEFICIARY VERIFICATION & ANTI-DUPLICATION -->
+        <section id="verification">
+            <h2>Beneficiary Verification & Anti-Duplication</h2>
+            <p>
+                Blockchain technology ensures each beneficiary is uniquely verified and prevents duplicate entries. 
+                Each beneficiary receives a unique blockchain ID that cannot be replicated, eliminating fraud and 
+                ensuring fund integrity.
+            </p>
+            
+            <div class="beneficiary-grid">
+                <div class="beneficiary-card">
+                    <div class="beneficiary-id">
+                        Blockchain ID: 0xBCF-2024-001-7a3f9b2c1d4e8a5f
+                    </div>
+                    <div class="verification-badge verified">✓ Verified</div>
+                    <div class="beneficiary-info">
+                        <p><strong>Name:</strong> Sarah Johnson</p>
+                        <p><strong>Application ID:</strong> APP-2024-001</p>
+                        <p><strong>Verification Date:</strong> 2024-03-10</p>
+                        <p><strong>Status:</strong> Unique - No duplicates detected</p>
+                    </div>
+                </div>
+
+                <div class="beneficiary-card">
+                    <div class="beneficiary-id">
+                        Blockchain ID: 0xBCF-2024-002-8b4g0c3e2f5h9i6j
+                    </div>
+                    <div class="verification-badge verified">✓ Verified</div>
+                    <div class="beneficiary-info">
+                        <p><strong>Name:</strong> Michael Chen</p>
+                        <p><strong>Application ID:</strong> APP-2024-002</p>
+                        <p><strong>Verification Date:</strong> 2024-03-11</p>
+                        <p><strong>Status:</strong> Unique - No duplicates detected</p>
+                    </div>
+                </div>
+
+                <div class="beneficiary-card">
+                    <div class="beneficiary-id">
+                        Blockchain ID: 0xBCF-2024-003-9c5h1d4f3g6i0j7k
+                    </div>
+                    <div class="verification-badge duplicate">⚠ Duplicate Detected</div>
+                    <div class="beneficiary-info">
+                        <p><strong>Name:</strong> John Smith</p>
+                        <p><strong>Application ID:</strong> APP-2024-008</p>
+                        <p><strong>Verification Date:</strong> 2024-03-12</p>
+                        <p><strong>Status:</strong> Duplicate entry - Matches existing beneficiary ID: 0xBCF-2024-001</p>
+                    </div>
+                </div>
+
+                <div class="beneficiary-card">
+                    <div class="beneficiary-id">
+                        Blockchain ID: 0xBCF-2024-004-ad6i2e5g4h7j1k8l
+                    </div>
+                    <div class="verification-badge verified">✓ Verified</div>
+                    <div class="beneficiary-info">
+                        <p><strong>Name:</strong> David Kim</p>
+                        <p><strong>Application ID:</strong> APP-2024-004</p>
+                        <p><strong>Verification Date:</strong> 2024-03-13</p>
+                        <p><strong>Status:</strong> Unique - No duplicates detected</p>
+                    </div>
+                </div>
+
+                <div class="beneficiary-card">
+                    <div class="beneficiary-id">
+                        Blockchain ID: 0xBCF-2024-005-be7j3f6h5i8k2l9m
+                    </div>
+                    <div class="verification-badge invalid">✗ Invalid</div>
+                    <div class="beneficiary-info">
+                        <p><strong>Name:</strong> Invalid Entry</p>
+                        <p><strong>Application ID:</strong> APP-2024-009</p>
+                        <p><strong>Verification Date:</strong> 2024-03-14</p>
+                        <p><strong>Status:</strong> Invalid credentials - Verification failed</p>
+                    </div>
+                </div>
+
+                <div class="beneficiary-card">
+                    <div class="beneficiary-id">
+                        Blockchain ID: 0xBCF-2024-006-cf8k4g7i6j9l3m0n
+                    </div>
+                    <div class="verification-badge verified">✓ Verified</div>
+                    <div class="beneficiary-info">
+                        <p><strong>Name:</strong> Amanda Taylor</p>
+                        <p><strong>Application ID:</strong> APP-2024-007</p>
+                        <p><strong>Verification Date:</strong> 2024-03-15</p>
+                        <p><strong>Status:</strong> Unique - No duplicates detected</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="blockchain-explanation">
+                <h4>How Blockchain Prevents Duplicate Beneficiaries</h4>
+                <p>
+                    <strong>Unique Identity Assignment:</strong> Each beneficiary receives a unique blockchain ID generated 
+                    from their verified credentials. This ID is cryptographically secure and cannot be duplicated.
+                </p>
+                <p>
+                    <strong>Immutable Registry:</strong> All beneficiary records are stored on the blockchain in an immutable 
+                    registry. When a new beneficiary is registered, the system checks against all existing records to detect duplicates.
+                </p>
+                <p>
+                    <strong>Automatic Detection:</strong> Smart contracts automatically verify each new entry against the blockchain 
+                    registry. If a duplicate is detected (matching identity markers), the system flags it and prevents fund distribution.
+                </p>
+                <p>
+                    <strong>Transparent Verification:</strong> All verification statuses are publicly viewable, ensuring complete 
+                    transparency in the beneficiary verification process.
+                </p>
+            </div>
+        </section>
+
+        <!-- ADMIN AUDIT & OVERSIGHT DASHBOARD -->
+        <section id="admin">
+            <h2>Administrative Audit & Oversight Dashboard</h2>
+            <p>
+                Complete audit trail of all system activities. Every action is permanently recorded on the blockchain, 
+                providing full transparency and accountability for administrative decisions and fund management.
+            </p>
+
+            <div class="dashboard-summary">
+                <div class="summary-card">
+                    <h3>127</h3>
+                    <p>Total Applicants</p>
+                </div>
+                <div class="summary-card">
+                    <h3>4</h3>
+                    <p>Verified Beneficiaries</p>
+                </div>
+                <div class="summary-card">
+                    <h3>$20,000</h3>
+                    <p>Funds Released</p>
+                </div>
+                <div class="summary-card">
+                    <h3>156</h3>
+                    <p>Blockchain Transactions</p>
+                </div>
+            </div>
+
+            <div class="audit-logs">
+                <h3 style="color: #1e3a5f; margin-top: 2rem; margin-bottom: 1rem;">Audit Logs</h3>
+                <div class="table-container">
+                    <table class="audit-table">
+                        <thead>
+                            <tr>
+                                <th>Action</th>
+                                <th>Performed By</th>
+                                <th>Timestamp</th>
+                                <th>Blockchain Reference ID</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Fund Release - APP-2024-001</td>
+                                <td>Admin-001 (Fund Manager)</td>
+                                <td>2024-03-15 14:32:18 UTC</td>
+                                <td class="blockchain-ref">0x7a3f9b2c1d4e8a5f6b7c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1</td>
+                                <td><span class="status-badge status-selected">Confirmed</span></td>
+                            </tr>
+                            <tr>
+                                <td>Beneficiary Verification - APP-2024-002</td>
+                                <td>Admin-001 (Fund Manager)</td>
+                                <td>2024-03-16 09:15:42 UTC</td>
+                                <td class="blockchain-ref">0x8b4g0c3e2f5h9i6j8k0l1m2n3o4p5q6r7s8t9u0v1w2x3y4z5a6b7c8d9e0f1</td>
+                                <td><span class="status-badge status-selected">Confirmed</span></td>
+                            </tr>
+                            <tr>
+                                <td>Fund Release - APP-2024-002</td>
+                                <td>Admin-001 (Fund Manager)</td>
+                                <td>2024-03-16 09:16:15 UTC</td>
+                                <td class="blockchain-ref">0x8b4g0c3e2f5h9i6j8k0l1m2n3o4p5q6r7s8t9u0v1w2x3y4z5a6b7c8d9e0f1</td>
+                                <td><span class="status-badge status-selected">Confirmed</span></td>
+                            </tr>
+                            <tr>
+                                <td>Duplicate Detection - APP-2024-008</td>
+                                <td>System (Smart Contract)</td>
+                                <td>2024-03-17 08:22:33 UTC</td>
+                                <td class="blockchain-ref">0x9c5h1d4f3g6i0j7k9l2m3n4o5p6q7r8s9t0u1v2w3x4y5z6a7b8c9d0e1f2</td>
+                                <td><span class="status-badge status-rejected">Blocked</span></td>
+                            </tr>
+                            <tr>
+                                <td>Fund Release - APP-2024-004</td>
+                                <td>Admin-001 (Fund Manager)</td>
+                                <td>2024-03-17 11:28:55 UTC</td>
+                                <td class="blockchain-ref">0x9c5h1d4f3g6i0j7k9l2m3n4o5p6q7r8s9t0u1v2w3x4y5z6a7b8c9d0e1f2</td>
+                                <td><span class="status-badge status-selected">Confirmed</span></td>
+                            </tr>
+                            <tr>
+                                <td>Invalid Credential Detection - APP-2024-009</td>
+                                <td>System (Smart Contract)</td>
+                                <td>2024-03-18 10:15:27 UTC</td>
+                                <td class="blockchain-ref">0xad6i2e5g4h7j1k8l0m3n4o5p6q7r8s9t0u1v2w3x4y5z6a7b8c9d0e1f2g3</td>
+                                <td><span class="status-badge status-rejected">Rejected</span></td>
+                            </tr>
+                            <tr>
+                                <td>Fund Release - APP-2024-007</td>
+                                <td>Admin-001 (Fund Manager)</td>
+                                <td>2024-03-18 16:45:12 UTC</td>
+                                <td class="blockchain-ref">0xad6i2e5g4h7j1k8l0m3n4o5p6q7r8s9t0u1v2w3x4y5z6a7b8c9d0e1f2g3</td>
+                                <td><span class="status-badge status-selected">Confirmed</span></td>
+                            </tr>
+                            <tr>
+                                <td>Role Assignment - Committee Member</td>
+                                <td>Admin-001 (Fund Manager)</td>
+                                <td>2024-03-19 09:30:00 UTC</td>
+                                <td class="blockchain-ref">0xbe7j3f6h5i8k2l9m0n1o2p3q4r5s6t7u8v9w0x1y2z3a4b5c6d7e8f9g0</td>
+                                <td><span class="status-badge status-selected">Confirmed</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="permanent-audit-notice">
+                All records are permanently auditable. Every action performed in the system is recorded on the blockchain 
+                with a unique reference ID. These records cannot be altered, deleted, or tampered with, ensuring complete 
+                accountability and transparency for all stakeholders.
+            </div>
+        </section>
+    </div>
+
+    <!-- ============================================
+         FOOTER
+         ============================================ -->
+    <footer>
+        <p><strong>Edu-Chain</strong> - Blockchain-Based Scholarship Transparency and Credential-Based Management System</p>
+        <p>All data displayed is read-only and represents blockchain-verified records</p>
+        <p>© 2024 Edu-Chain System. All rights reserved.</p>
+    </footer>
+</body>
+</html>
