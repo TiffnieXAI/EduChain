@@ -1,4 +1,4 @@
-# 🛡️ EduChain — Verifiable Education Infrastructure on Blockchain (Plokadot Bootcamp Ideathon)
+# 🛡️ EduChain — Verifiable Education Infrastructure on Blockchain (Polkadot Bootcamp Ideathon)
 
 > **A decentralized system for issuing, managing, and verifying academic credentials — instantly, securely, and globally.**
 
